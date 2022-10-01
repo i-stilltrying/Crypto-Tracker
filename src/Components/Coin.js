@@ -13,7 +13,10 @@ const Coin = ({
 }) => {
   let history = useHistory();
   return (
-    <div className="coinContainer">
+    <div className="coinContainer"
+                onClick={() => {
+                history.push(`/CoinPage/${id}`);
+              }}>
       <div className="coinRow">
         <div className="coinData">
           <div className="coin">
@@ -27,13 +30,11 @@ const Coin = ({
               <p className="priceChange green">{priceChange.toFixed(2)}%</p>
             )}
             <p className="coinVolume">$ {marketCap.toLocaleString()}</p>
-            <button
-              onClick={() => {
-                history.push(`/CoinPage/${id}`);
-              }}
+            {/* <button
+              
             >
               More Info
-            </button>
+            </button> */}
           </div>
         </div>
       </div>

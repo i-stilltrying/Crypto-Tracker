@@ -9,10 +9,34 @@
   justify-content: center;
   align-items: center;
   height: 70px;
-  border-bottom: 1px solid #d7d7d7;
+  /* border: 1px solid #d7d7d7; */
   background-color: transparent;
+  padding: 10px;
+  border-radius: 15px;
 }
-
+.coinRow:hover {
+  transform: scale(1.1);
+  transition: all ease-in-out 0.4s;
+  box-shadow: 0 0 11px rgb(255, 255, 255);
+  cursor: pointer;
+  
+  /* transition: width 2s, height 4s; */
+  /* transition-delay: 1s; */
+}
+/* 
+h1 {
+  font-size: 3rem;
+  letter-spacing: 0.9px;
+  background: linear-gradient(
+    90deg,
+    rgba(249, 211, 180, 1) 0%,
+    rgba(249, 211, 180, 0) 100%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  width: fit-content;
+} */
 .coinData {
   display: flex;
   align-items: center;
