@@ -50,7 +50,7 @@ function Home() {
         <h1>Welcome to the CryptoChecker</h1>
         <div className="buttonContainer">
           <input
-            placeholder="Search for a Coin"
+            placeholder="Search "
             type="text"
             onChange={handleSearch}
           />
